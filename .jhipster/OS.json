@@ -1,0 +1,38 @@
+{
+  "name": "OS",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "osGroup",
+      "otherEntityRelationshipName": "oS",
+      "relationshipName": "osGroups",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200701202739",
+  "entityTableName": "os",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jhipsterSampleApplication321",
+  "applications": "*",
+  "microserviceName": "jhipsterSampleApplication321"
+}

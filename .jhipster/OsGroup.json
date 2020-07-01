@@ -1,0 +1,44 @@
+{
+  "name": "OsGroup",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "attribute",
+      "otherEntityRelationshipName": "osGroup",
+      "relationshipName": "attributes",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "osSubgroup",
+      "otherEntityRelationshipName": "osGroup",
+      "relationshipName": "osSubgroups",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "applet",
+      "otherEntityRelationshipName": "osGroup",
+      "relationshipName": "applets",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200701202639",
+  "entityTableName": "os_group",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jhipsterSampleApplication321",
+  "applications": "*",
+  "microserviceName": "jhipsterSampleApplication321"
+}
