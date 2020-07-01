@@ -1,0 +1,39 @@
+entity Attribute {
+	name String,
+    value String
+}
+
+entity Applet {
+	aid String,
+    version String,
+    packageName String
+}
+
+entity Subgroup {
+	name String
+}
+entity Group {
+	name String
+}
+entity OS {
+	name String,
+    version String,
+    endDate Instant
+}
+
+relationship ManyToOne {
+	Attribute{subgroup} to Subgroup
+}
+relationship ManyToOne {
+	Attribute{group} to Group
+}
+relationship ManyToOne {
+	Subgroup{group} to Group
+}
+relationship ManyToOne {
+	Applet{group} to Group
+}
+relationship ManyToOne {
+	Group{os} to OS
+}
+
