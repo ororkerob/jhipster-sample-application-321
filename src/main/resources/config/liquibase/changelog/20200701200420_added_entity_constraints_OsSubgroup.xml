@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity OsSubgroup.
+    -->
+    <changeSet id="20200701200420-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="os_group_id"
+                                 baseTableName="os_subgroup"
+                                 constraintName="fk_os_subgroup_os_group_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="os_group"/>
+
+    </changeSet>
+</databaseChangeLog>
