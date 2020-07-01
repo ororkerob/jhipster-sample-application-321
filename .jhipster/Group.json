@@ -1,0 +1,30 @@
+{
+  "name": "Group",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "oS",
+      "otherEntityRelationshipName": "group",
+      "relationshipName": "os",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200701192304",
+  "entityTableName": "group",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jhipsterSampleApplication321",
+  "applications": "*",
+  "microserviceName": "jhipsterSampleApplication321"
+}
