@@ -1,0 +1,29 @@
+{
+  "name": "OsSubgroup",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "attribute",
+      "otherEntityRelationshipName": "osSubgroup",
+      "relationshipName": "attributes"
+    }
+  ],
+  "changelogDate": "20200701202539",
+  "entityTableName": "os_subgroup",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jhipsterSampleApplication321",
+  "applications": "*",
+  "microserviceName": "jhipsterSampleApplication321"
+}
